@@ -177,8 +177,23 @@ Now we have a free-standing Dockerfile, we can leverage the Azure CLI to initiat
 az acr build -g eshopmodernise -r YOURACRNAME -t 2019fullfat:20220805 https://github.com/Gordonby/eShopModernizing.git#main:eShopLegacyWebFormsSolution --platform windows
 ```
 
+#### Acr Build Logs
+
 ![acr build screenshot one](docassets/acrbuild.png)
+
 ![acr build screenshot two](docassets/acrbuild2.png)
+
+
+#### Acr run Logs
+
+There is a modererate (25%) variation in build time for the same image as you can see from the run logs
+
+Run Id | Task | Platform | Status | Trigger | Started | Duration
+------ | ---- | -------- | ------ | ------- | ------- | --------
+ca4 | (Quick Task) | windows | Succeeded | Manual | 10/11/2022, 10:12 AM GMT+1 | 00:21:52
+ca3 | (Quick Task) | windows | Succeeded | Manual | 10/11/2022, 10:02 AM GMT+1 | 00:19:23
+ca2 | (Quick Task) | windows | Succeeded | Manual | 10/11/2022, 9:03 AM GMT+1 | 00:24:03 
+ca1 | (Quick Task) | windows | Succeeded | Manual | 10/11/2022, 8:27 AM GMT+1 | 00:22:54
 
 ### Building the image in CI/CD Tooling
 
