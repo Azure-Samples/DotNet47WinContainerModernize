@@ -12,6 +12,8 @@ The application chosen for this guide is from the [eShopModernizing](https://git
 
 To iteratively work with the application, modernising it step by step to eventually run in a Windows 2022 container. Once containerised there will be guidance on running it in a number of Azure Container Compute services.
 
+Code changes to the application will be minimized, and migration from DotNet Framework to DotNet is not in scope.
+
 ## The steps
 
 Step # | Title | Description
