@@ -1,6 +1,6 @@
-## Step 6 - Compute Options
+# Step 6 - Compute Options
 
-Now that we have our Container Image in ACR, there are several compute options for hosting it. 
+Now that we have our Container Image in ACR, there are several compute options for hosting it.
 
 Azure Service | Summary | Docs | Learn Courses
 ------------- | ------- | ---- | -------------

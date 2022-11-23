@@ -1,4 +1,4 @@
-## Step 2 - Publishing to an Azure VM
+# Step 2 - Publishing to an Azure VM
 
 It can be useful to see the app working on a traditional Windows VM as part of the modernisation journey.
 

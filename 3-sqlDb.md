@@ -1,4 +1,4 @@
-## Step 3 - Connecting to a SQL database
+# Step 3 - Connecting to a SQL database
 
 The application is working from an in-memory database, and the next step is to configure it to use an Azure SQL Database.
 

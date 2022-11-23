@@ -1,4 +1,4 @@
-## Step 7 - Deploying to Azure App Service (Containers)
+# Step 7 - Deploying to Azure App Service (Containers)
 
 For this step, we'll use the [portal](https://ms.portal.azure.com/#create/Microsoft.AppSvcLinux) to quickly create a Windows OS, Docker Container based Web App. The portal makes light work of pulling our image from the Azure Container Registry.
 
@@ -10,7 +10,7 @@ Once the image has been pulled, the application is available, running from the s
 
 https://docs.microsoft.com/en-gb/azure/app-service/configure-custom-container?pivots=container-linux#use-an-image-from-a-private-registry
 
-### Using Azure AD for SQL Authentication
+## Using Azure AD for SQL Authentication
 
 Managed Identities provide a great way for Azure services to access other Azure services with a clear RBAC system.
 
@@ -31,4 +31,4 @@ Enable [Auto-Instrumentation](https://azure.github.io/AppService/2022/04/11/wind
 
 ### Scalability
 
-[ARR affinity](https://azure.github.io/AppService/2016/05/16/Disable-Session-affinity-cookie-(ARR-cookie)-for-Azure-web-apps.html) is supported. 
+[ARR affinity](https://azure.github.io/AppService/2016/05/16/Disable-Session-affinity-cookie-(ARR-cookie)-for-Azure-web-apps.html) is supported.
