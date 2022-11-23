@@ -1,10 +1,10 @@
-## Step 1 - Getting the app running locally
+# Step 1 - Getting the app running locally
 
-Before modernising starts, it's best to see the app running and working properly.
+Before modernizing starts, it's best to see the app running and working properly.
 
 Clone or download this GitHub repository, and open the `eShopLegacyWebFormsSolution/eShopLegacyWebForms.sln` file in Visual Studio.
 
-### Compilation Error
+## Compilation Error
 
 If you find you receive a compilation error for roslyn;
 > 'Could not find a part of the path '\eShopModernizing\eShopLegacyWebFormsSolution\src\eShopLegacyWebForms\bin\roslyn\csc.exe''

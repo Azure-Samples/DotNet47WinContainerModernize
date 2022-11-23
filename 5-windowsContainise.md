@@ -1,4 +1,4 @@
-## Step 5 - Windows Containers
+# Step 5 - Windows Containers
 
 Azure App Service provides a simple destination for most web applications. However it does limit the processes that are allowed to run, this can mean for complex applications that have permissive library dependencies - these will normally be blocked, eg.
 
@@ -21,7 +21,7 @@ COPY ${source:-obj/Docker/publish} .
 
 Now we can run the application locally in a container from Visual Studio.
 
-### Container Registry (ACR)
+## Container Registry (ACR)
 
 Azure has a container registry for container image storage, even if you already have a preferred on-premises registry it can be beneficial to use Azure Container Registry in addition because of the integration it has with other Azure services.
 
@@ -68,7 +68,7 @@ Now when the Dockerfile is called via a straight `docker build .` command, it ca
 
 ### Building the image with to ACR directly
 
-Building and pushing images locally can take time, all dependant on your internet connection (especially with the size of Windows Containers!). 
+Building and pushing images locally can take time, all dependant on your internet connection (especially with the size of Windows Containers!).
 A more efficient way to do it is to have the Azure Container Registry build the image itself.
 
 > For ACR to be able to build the Dockerfile it needs to be able to access your source code, [Private Pools](https://docs.microsoft.com/azure/container-registry/tasks-agent-pools) are a preview feature which project the ACR build agents into your private virtual network.
@@ -85,16 +85,15 @@ az acr build -g eshopmodernise -r YOURACRNAME -t 2019fullfat:20220805 https://gi
 
 ![acr build screenshot two](docassets/acrbuild2.png)
 
-
 #### Acr run Logs
 
-There is a modererate (25%) variation in build time for the same image as you can see from the run logs
+There is a moderate (25%) variation in build time for the same image as you can see from the run logs
 
 Run Id | Task | Platform | Status | Trigger | Started | Duration
 ------ | ---- | -------- | ------ | ------- | ------- | --------
 ca4 | (Quick Task) | windows | Succeeded | Manual | 10/11/2022, 10:12 AM GMT+1 | 00:21:52
 ca3 | (Quick Task) | windows | Succeeded | Manual | 10/11/2022, 10:02 AM GMT+1 | 00:19:23
-ca2 | (Quick Task) | windows | Succeeded | Manual | 10/11/2022, 9:03 AM GMT+1 | 00:24:03 
+ca2 | (Quick Task) | windows | Succeeded | Manual | 10/11/2022, 9:03 AM GMT+1 | 00:24:03
 ca1 | (Quick Task) | windows | Succeeded | Manual | 10/11/2022, 8:27 AM GMT+1 | 00:22:54
 
 ### Building the image in CI/CD Tooling

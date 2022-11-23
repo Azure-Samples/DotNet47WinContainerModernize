@@ -4,7 +4,7 @@ This guide provides a step by step, developer centric view of migrating **legacy
 
 For a tool based approach using  Azure Migrate: App Containerization tool, please see [https://docs.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes](https://docs.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-kubernetes) or [https://docs.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service](https://docs.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service), noting that (at the time of writing) the tooling doesn't support Apps that use Windows Authentication or have non IIS dependencies.
 
-### The App
+## The App
 
 The application chosen for this guide is from the [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing) repo. It's a DotNet Framework 4.7 Web Forms Application.
 
@@ -22,7 +22,7 @@ Step # | Title | Description
 2 | [On a Virtual Machine](2-virtualMachine.md) | Getting the app running on an Azure VM.
 3 | [SQL Database](3-sqlDb.md) | Using SQL instead of the in-memory Database
 4 | [App Service](4-appService.md) | Hosting the application in the App Service PaaS platform
-5 | [Windows Containerisation](5-windowsContainerise.md) | Focussing on creating a Windows Container
+5 | [Windows Containerisation](5-windowsContainise.md) | Focussing on creating a Windows Container
 6 | [Windows Container Compute](6-containerCompute.md) | Reviewing the options for running a Windows Container
 7 | [Web App for Containers](7-webAppContainers.md) | Deploying the app to Web App for Containers
 8 | Kubernetes | Deploying the app to Kubernetes
@@ -37,7 +37,7 @@ Step # | Title | Description
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+the rights to use your contribution. For details, visit <https://cla.opensource.microsoft.com>.
 
 When you submit a pull request, a CLA bot will automatically determine whether you need to provide
 a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
